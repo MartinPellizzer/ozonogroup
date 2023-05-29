@@ -4,8 +4,34 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.section-hero {
     background-color: #1d4ed8;
+    height: 90vh;
 }
 
 .container {
@@ -18,8 +44,16 @@ body {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 .items-center {
@@ -34,6 +68,73 @@ body {
     height: 100vh;
 }
 
-h1 {
+.text-center {
+    text-align: center;
+}
+
+.color-white {
     color: white;
+}
+
+.mb-8 {
+    margin-bottom: 0.8rem;
+}
+
+.mb-16 {
+    margin-bottom: 1.6rem;
+}
+
+.mb-32 {
+    margin-bottom: 3.2rem;
+}
+
+.py-64 {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+}
+
+.py-96 {
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+}
+
+h1 {
+    font-size: 6.4rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4.0rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 4.8rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 2.4rem;
+}
+
+.btn-main {
+    text-decoration: none;
+    color: #1d4ed8;
+    background-color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
+}
+
+.btn-ghost {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    border: 2px solid white;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
 }
