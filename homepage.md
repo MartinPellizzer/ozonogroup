@@ -1,8 +1,61 @@
-consumatori sempre piu esigenti?
+## Consumatori sempre piu esigenti?
 
-I consumatori non si accontentano più.
+I casi di richiami alimentari aumentano. E Le notizie viaggiano in fretta.
 
-Negli ultimi anni, la richiesta di cibi più "puliti e sanificati" è aumentata a dismisura. A causa dei recenti casi di richiami alimentari e focolai di epidemie, i consumatori stanno molto più attenti a cosa mangiano - scegliendo alimenti e brands con cura.
+Le storie legate alle contaminazioni dei cibi sono ormai all'ordine del giorno. I consumatori sono sempre più preoccupati per la loro salute e pretendono alimenti più "puliti e igienizzati". 
+
+E come se non bastasse...
+
+Non si accontentano di cibi che sono "solo" sicuri. Ma vogliono anche che siano biologici, naturali, e privi di additivi chimici tossici. Esigono una maggiore trasparenza da parte dei produttori, scegliendo alimenti e brands con cura.
+
+Ma se sei un'azienda di produzione alimentare, sai bene di cosa stiamo parlando.
+
+Consumatori sempre più esigenti. Leggi sempre più restrittive. Disinfettanti chimici sempre più scadenti. È diventato frustrante far contenti tutti, risolvere i problemi in modo ecologico e non rischiare di perdere la reputatione per un passo falso.
+
+Ma come uscirne?
+
+### Efficace
+
+
+### Ecologico
+
+
+
+## news
+le recensioni dei prodotti e i consigli sulla salute sono all'ordine del giorno. I consumatori sono preoccupati per la loro salute e pretendono cibi sempre più "puliti e igienizzati". Richiedono una maggiore trasparenza da parte dei produttori alimentari e scelgono alimenti e brands con cura.
+
+Come se non bastasse...
+
+I ritmi di vita sono sempre più frenetici e la dipendenza dai cibi pronti è aumentata. I consumatori chiedono cibi sempre più biologici, naturali, e privi di additivi chimici tossici.
+
+
+Sono consapevoli dei potenziali rischi associati alle malattie trasmesse dai cibi e alla contaminazione
+
+richiedono una maggiore trasparenza da parte dei produttori alimentari
+cercano rassicurazioni sulle misure di sicurezza. I consumatori .
+
+
+## vogliono cibi pronti ma sicuri
+Con ritmi di vita sempre più frenetici e una maggiore dipendenza dai cibi pronti, i consumatori cercano opzioni nutrienti e salutari che siano in linea con i loro obiettivi dietetici. Ciò ha portato a una crescente preferenza per prodotti alimentari minimamente lavorati, biologici e naturali.
+
+
+
+
+
+L'etichettatura pulita, che si concentra su elenchi trasparenti di ingredienti privi di additivi e conservanti, sta guadagnando popolarità poiché i consumatori si sforzano di fare scelte informate sul cibo che consumano.
+
+## le news viaggiano in fretta con internet
+Di conseguenza, qualsiasi mancanza nella sicurezza alimentare o nella qualità può rapidamente diventare virale e influenzare la fiducia dei consumatori.
+
+mantenere la loro reputazione e soddisfare le aspettative dei consumatori.
+
+
+
+
+
+
+
+
 
 
 Introduction
