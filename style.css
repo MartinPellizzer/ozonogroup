@@ -17,86 +17,61 @@ html {
 }
 
 body {
+    font-size: 1.8rem;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* TAGS -------------------------------------------------------------- */
+
 h1 {
+    color: #0f172a;
     font-size: 6.4rem;
     line-height: 1;
     font-weight: 400;
-    color: #ffffff;
     margin-bottom: 3.2rem;
 }
 
 h2 {
+    color: #0f172a;
     font-size: 4.0rem;
     line-height: 1;
-    font-weight: bold;
-    color: #111;
+    font-weight: 700;
     margin-bottom: 4.8rem;
 }
 
 h3 {
+    color: #0f172a;
     font-size: 2.4rem;
     line-height: 1;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 1.6rem;
-    color: #111;
 }
 
 p {
-    font-size: 1.8rem;
+    color: #334155;
     line-height: 1.5;
-    color: #333;
     margin-bottom: 2.4rem;
 }
-
-
-/* HEADER ------------------------------------------------------------ */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.6rem 0;
-}
-
-header a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-}
-
-
-/* NAV ------------------------------------------------------------ */
-nav {
-    display: flex;
-    gap: 3.2rem;
-}
-
-
 
 p:last-child {
     margin-bottom: 0;
 }
 
-.btn-main {
-    text-decoration: none;
-    color: var(--white);
-    background-color: var(--blue-600);
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 1.6rem 3.2rem;
-    display: inline-block;
+ul {
+    color: #334155;
+    line-height: 1.5;
+    margin-left: 1.6rem;
 }
 
-.btn-ghost {
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-    border: 2px solid white;
-    padding: 1.6rem 3.2rem;
-    display: inline-block;
+li {
+    margin-bottom: 2.4rem;
 }
 
+svg {
+    color: #0f172a;
+}
+
+/* COMPONENTS ----------------------------------------------------- */
 .call-number {
     color: white;
     text-align: center;
@@ -107,13 +82,27 @@ p:last-child {
 }
 
 .button-primary {
-    display: inline-block;
-    font-size: 1.8rem;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #1e40af;
-    padding: 1.6rem 3.2rem;
+    background-color: #1d4ed8;
+    color: white;
+    padding: 1.2rem 2.8rem;
 }
+
+.button-secondary {
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* background-color: #1d4ed8; */
+    color: white;
+    border: 2px solid #fff;
+    padding: 1.2rem 2.8rem;
+}
+
+
 
 
 
@@ -122,7 +111,6 @@ p:last-child {
 /* ************************************************************ */
 /* HEADER */
 /* ************************************************************ */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -130,14 +118,47 @@ header {
     padding: 3.2rem 0;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.header-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 0;
+}
+
+.header-light a {
+    text-decoration: none;
+    color: #0f172a;
+}
+
+.header-light-section {
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08); */
+}
+
+
+
+/* ************************************************************ */
+/* BREADCRUMBS */
+/* ************************************************************ */
+.breadcrumbs-section {
+    padding: 1.6rem 0;
+}
+
+
 
 /* ************************************************************ */
 /* SECTIONS */
 /* ************************************************************ */
-
-.py-lg {
-    padding: 9.6rem 0;
-}
 
 .bg-light {
     background-color: #eff6ff;
@@ -148,22 +169,21 @@ header {
 }
 
 
+
 /* HERO SECTION */
 /* ************************************************************ */
-
 .hero-section {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /* padding: 9.6rem 0; */
 }
 
-.img-sanificazione {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/sanificazione-ozono.jpg');
+.hero-section h1 {
+    color: #fff;
 }
 
-.img-sanificazione-dark {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/sanificazione-ozono.jpg');
+.hero-section p {
+    color: #fff;
 }
 
 .hero-main {
@@ -178,135 +198,10 @@ header {
 }
 
 
-/* SERVICES ------------------------------------------------------------ */
-.services-section {}
 
 
 
 
-
-
-:root {
-    --hero-opacity: 0.5;
-    --hero-opacity2: 0.2;
-}
-
-/* GENERAL */
-
-span {
-    font-size: 1.8rem;
-}
-
-a {
-    font-size: 1.8rem;
-}
-
-/* p {
-    color: #333;
-} */
-
-.link-disabled {
-    color: #aaa;
-}
-
-.container-xl {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 32px;
-}
-
-.container-half {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 0 32px;
-}
-
-.container-md {
-    max-width: 76.8rem;
-    padding: 0 32px;
-}
-
-.container-lg {
-    max-width: 99.2rem;
-    margin: 0 auto;
-    padding: 0 32px;
-}
-
-
-
-
-/* HERO ------------------------------------------------------------ */
-.hero-light {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/assets/images/hero-light.jpg');
-}
-
-.hero-light h1 {
-    color: #111;
-    font-weight: bold;
-}
-
-.hero-light p {
-    color: #333;
-}
-
-.hero-light header a {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 2.4rem;
-    text-decoration: none;
-}
-
-.hero-dark {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/assets/images/hero.jpg');
-}
-
-.hero-dark h1 {
-    color: #fff;
-}
-
-.hero-dark p {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    color: #fff;
-    margin-bottom: 2.4rem;
-}
-
-.hero-dark header a {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    color: #fff;
-    margin-bottom: 2.4rem;
-    text-decoration: none;
-}
-
-.hero-world {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/ozono.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-world h1 {
-    color: #fff;
-}
-
-
-.hero-world p {
-    color: #fff;
-}
-
-.hero-world header a {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    color: #fff;
-    margin-bottom: 2.4rem;
-    text-decoration: none;
-}
-
-
-p:last-child {
-    margin-bottom: 0;
-}
 
 
 .button-secondary {
@@ -332,15 +227,12 @@ p:last-child {
 
 
 /* CONTACTS ------------------------------------------------------------ */
-.contacts-section {
-    /* padding: 19.2rem 0; */
-}
-
 .contacts-section ul {
     list-style: none;
     font-size: 1.8rem;
     line-height: 2.4;
 }
+
 
 
 /* FOOTER ------------------------------------------------------------ */
@@ -350,10 +242,12 @@ p:last-child {
 }
 
 
+
 /* ICONS ------------------------------------------------------------ */
 svg {
     width: 24px;
 }
+
 
 
 /* IMAGES ------------------------------------------------------------ */
@@ -361,116 +255,48 @@ svg {
     height: 40rem;
 }
 
-.img-hero {
-    /* background-image: url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'); */
-    background: linear-gradient(rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity))), var(--hero-url);
-    background: linear-gradient(rgba(0, 0, 0, var(--opacity)),
-            rgba(0, 0, 0, var(--opacity))), url('virus.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-meat {
-    background-image: url('https://images.unsplash.com/photo-1628543108325-1c27cd7246b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-meat2 {
-    background-image: url('https://images.unsplash.com/photo-1557221016-f81ec6b1a46b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-cheese {
-    background-image: url('https://images.unsplash.com/photo-1558221693-89a565d7ecd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-vegetables {
-    background-image: url('https://images.unsplash.com/photo-1533321942807-08e4008b2025?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1959&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-beverage {
-    background-image: url('https://images.unsplash.com/photo-1559539620-ec0c0f46e19e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-seafood {
-    background-image: url('https://images.unsplash.com/photo-1585545335512-1e43f40d4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.img-bakery {
-    background-image: url('https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-
-.img-customer {
-    background: linear-gradient(rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-    background-size: cover;
-    background-position: right;
-}
-
-.img-water {
-    background: linear-gradient(rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)), url('water.jpg');
-    background-size: cover;
-    background-position: right;
-}
-
-.hero-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/ozono.jpg');
-    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/assets/images/hero.jpg'); */
-    background-size: cover;
-    background-position: center;
-}
-
-.ozonoterapia-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/ozonoterapia.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 80rem;
-}
-
-.sanificazione-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/sanificazione-ozono.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 80rem;
-}
-
-.scienza-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('assets/images/ozono-scienza.jpg');
-    background-size: cover;
-    background-position: bottom;
-    height: 80rem;
-}
-
-
 .applications-layout {
     display: flex;
     align-items: center;
 }
 
-/* 
-img {
-    width: 100%;
-} */
-
 .w-100 {
     width: 100%;
 }
 
+
+
+/* SPACING -------------------------------------------------------------- */
+.py-lg {
+    padding: 9.6rem 0;
+}
+
+
+
+/* ************************************************************ */
+/* LAYOUT ***************************************************** */
+/* ************************************************************ */
+.container-xl {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.container-half {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+
+
 /* GRID --------------------------------------------------------------- */
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4.8rem;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -500,19 +326,16 @@ img {
 
 
 /* MEDIA ------------------------------------------------------------------------------ */
-/* @media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-} */
-
-
 @media (max-width: 996px) {
     .hero-content {
         flex: 5;
     }
 
     .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-3 {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -539,13 +362,6 @@ img {
         order: 1;
     }
 
-    /* 
-    .applications-layout {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    } */
-
     .scienza-image {
         height: 60rem;
     }
@@ -569,9 +385,7 @@ img {
     .m-pt-lg {
         padding-top: 9.6rem;
     }
-
 }
-
 
 @media (max-width: 768px) {
     .section {
@@ -579,6 +393,10 @@ img {
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
         grid-template-columns: 1fr;
     }
 
