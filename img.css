@@ -167,3 +167,17 @@
     background-position: center;
     height: 80rem;
 }
+
+
+@media (max-width: 768px) {
+
+    .img-services-delivery,
+    .img-services-support,
+    .img-mission-people,
+    .img-mission-leader,
+    .img-mission-technology {
+        height: 100%;
+    }
+
+
+}
