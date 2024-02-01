@@ -1,9 +1,29 @@
+@font-face {
+    font-family: Lato-Body;
+    src: url(/assets/fonts/Lato-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lato-Header;
+    src: url(/assets/fonts/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(/assets/fonts/Lato-Black.ttf);
+    font-weight: bold;
+}
+
 :root {
     --opacity: 0.5;
     --yellow-200: #fef08a;
     --blue-500: #3b82f6;
     --blue-600: #1d4ed8;
     --white: #fff;
+    --slate-950: #020617;
+    --grid-img-size: 45rem;
 }
 
 * {
@@ -18,22 +38,24 @@ html {
 
 body {
     font-size: 1.8rem;
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: Lato-Body;
 }
 
 /* TAGS -------------------------------------------------------------- */
 
 h1 {
+    font-family: Lato-Header;
     color: #0f172a;
     font-size: 6.4rem;
     line-height: 1;
-    font-weight: 400;
     margin-bottom: 3.2rem;
 }
 
 h2 {
+    font-family: Lato-Header;
     color: #0f172a;
-    font-size: 4.0rem;
+    font-size: 3.2rem;
     line-height: 1;
     font-weight: 700;
     /* margin-bottom: 4.8rem; */
@@ -108,14 +130,35 @@ img {
 }
 
 
+.bg-neutral-200 {
+    background-color: #e5e5e5;
+}
 
+.bg-blue-600 {
+    background-color: #2563eb;
+}
 
+.text-blue-600 {
+    color: #2563eb;
+}
 
+.icon {
+    width: 3.2rem;
+}
+
+.link-blue {
+    color: #2563eb;
+    text-decoration: none;
+}
 
 
 /* ************************************************************ */
 /* HEADER */
 /* ************************************************************ */
+.header {
+    background-color: #e5e5e5;
+}
+
 header {
     position: relative;
     display: flex;
@@ -124,9 +167,14 @@ header {
     padding: 3.2rem 0;
 }
 
+.logo img {
+    height: 4.8rem;
+}
+
 .logo a {
     display: block;
     text-decoration: none;
+    /* color: var(--slate-950); */
     color: white;
 }
 
@@ -151,8 +199,12 @@ nav {
 
 .menu li a {
     text-decoration: none;
+    /* color: var(--slate-950); */
     color: white;
-    display: block;
+}
+
+.home .menu li a {
+    color: var(--slate-950);
 }
 
 .header-section {
@@ -209,6 +261,22 @@ nav input:checked~.menu {
     right: 0;
 }
 
+
+/* ************************************************************ */
+/* INDUSTRIES */
+/* ************************************************************ */
+.industry-card {
+    font-family: Lato-Header;
+    letter-spacing: 2px;
+    color: white;
+    color: var(--blue-600);
+    background-color: var(--yellow-200);
+    text-align: center;
+    padding: 0.8rem 1.6rem;
+    text-transform: uppercase;
+}
+
+
 /* ************************************************************ */
 /* HEADER LIGHT? */
 /* ************************************************************ */
@@ -259,22 +327,128 @@ nav input:checked~.menu {
 .hero-section {
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hero-section h1 {
-    color: #fff;
+    font-size: 6.4rem;
+    color: white;
+    padding: 1.6rem 3.2rem;
+    font-family: Lato-Body;
+    padding: 0;
+}
+
+.hero-section .home h1 {
+    color: #1d4ed8;
+    background-color: #fef08a;
+    padding: 1.6rem 3.2rem;
+}
+
+.hero-section .home p {
+    color: #334155;
 }
 
 .hero-section p {
-    color: #fff;
+    color: white;
 }
+
+/* 
+.hero-section p {
+    color: #fff;
+} */
 
 .hero-main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80%;
+}
+
+
+.hero-img {
+    /* height: 100%; */
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/hero-img-1.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+
+.img-chemicals {
+    height: 80rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/chemicals-problem-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.img-caseificio {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/caseificio-0002.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-salumificio {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/salumificio-0000.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-verdura {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/verdura-0000.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-funghi {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/funghi-0001.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-vino {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/vino-0004.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-pesci {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/pesci-0001.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-grano {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/grano-0003.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-acqua {
+    height: var(--grid-img-size);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/assets/images/acqua-0000.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.stats-num {
+    font-size: 3.6rem;
+}
+
+
+.statistics-section {
+    background-color: #bfdbfe;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
 }
 
 
@@ -303,10 +477,10 @@ nav input:checked~.menu {
 
 
 
-/* CTA ------------------------------------------------------------ */
+/* ;CTA ------------------------------------------------------------ */
 .cta-section {
     /* padding: 19.2rem 0; */
-    background-color: #1e40af;
+    background-color: var(--blue-600);
 }
 
 
@@ -360,6 +534,26 @@ svg {
     padding-top: 9.6rem;
 }
 
+.pt-96 {
+    padding-top: 9.6rem;
+}
+
+.pt-64 {
+    padding-top: 6.4rem;
+}
+
+.pt-32 {
+    padding-top: 3.2rem;
+}
+
+.pb-96 {
+    padding-bottom: 9.6rem;
+}
+
+.p-16 {
+    padding: 1.6rem;
+}
+
 
 
 /* ************************************************************ */
@@ -390,6 +584,11 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4.8rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .grid-2 {
@@ -430,8 +629,25 @@ svg {
     align-items: center;
 }
 
+.grid-applications {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 
+
+
+.hero-section {
+    display: block;
+}
+
+.hero-section-mobile {
+    display: none;
+}
+
+.section-problem-mobile {
+    display: none;
+}
 
 
 /* MEDIA ------------------------------------------------------------------------------ */
@@ -494,6 +710,11 @@ svg {
     .m-pt-lg {
         padding-top: 9.6rem;
     }
+
+    .grid-applications {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -550,6 +771,41 @@ svg {
     }
 
     .button-primary {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        padding: 1.6rem 3.2rem;
+        /* text-transform: uppercase; */
+    }
+
+    .hero-img {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/hero-img-mobile.png');
+        background-size: cover;
+        background-position: top center;
+        /* margin-top: -130px; */
+    }
+
+    .hero-section-home {
+        display: none;
+    }
+
+    .hero-section-mobile {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .section-problem {
+        display: none;
+    }
+
+    .section-problem-mobile {
+        display: block;
+    }
+
+    .grid-applications {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
