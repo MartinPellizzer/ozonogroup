@@ -810,6 +810,14 @@ svg {
     margin-bottom: 9.6rem;
 }
 
+.mt-32 {
+    margin-top: 3.2rem;
+}
+
+.mt-48 {
+    margin-top: 4.8rem;
+}
+
 .ml-32 {
     margin-left: 3.2rem;
 }
