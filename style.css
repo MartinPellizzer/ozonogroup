@@ -94,6 +94,33 @@
     --ds-theme-border-radius-xl: var(--size-16);
 }
 
+
+.chi-siamo-hero-button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-default {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    background-color: var(--ds-theme-button-color-background-default);
+    border: 1px solid var(--ds-theme-button-color-border-default);
+    border-radius: 9999px;
+    padding: 8px 16px;
+}
+
+.button-default a {
+    color: var(--ds-theme-button-color-content-default);
+    text-decoration-line: none;
+}
+
+.button-default svg {
+    color: var(--ds-theme-button-color-content-default);
+    text-decoration-line: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -121,6 +148,14 @@ p {}
 .container-xl {
     max-width: 1600px;
     max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.container-lg {
+    max-width: 996px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
@@ -888,4 +923,53 @@ p {}
 
 .article-contact-card-desc {
     margin-bottom: 32px;
+}
+
+/* ******************************* */
+/* chi siamo */
+/* ******************************* */
+.chi-siamo-hero-container {}
+
+.chi-siamo-hero-title {
+    color: var(--ds-theme-color-content-display);
+    font-size: var(--ds-theme-typography-size-xxl);
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    /* text-transform: capitalize; */
+    text-align: center;
+}
+
+.chi-siamo-hero-title-span {
+    color: var(--ds-theme-color-content-display);
+    font-size: var(--ds-theme-typography-size-xl);
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: 16px;
+    /* text-transform: capitalize; */
+    text-align: center;
+}
+
+.chi-siamo-hero-subtitle {
+    color: var(--ds-theme-color-content-display);
+    font-size: var(--ds-theme-typography-size-md);
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    /* text-transform: capitalize; */
+    text-align: center;
+}
+
+.chi-siamo-storia-titolo {
+    color: var(--ds-theme-color-content-display);
+    font-size: var(--ds-theme-typography-size-xl);
+    line-height: 44px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    /* text-transform: capitalize; */
+    /* text-align: center; */
+}
+
+.chi-siamo-storia-paragrafo {
+    margin-bottom: 16px;
 }
