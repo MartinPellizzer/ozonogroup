@@ -375,8 +375,8 @@
         
             .header-dark {
                 background-color: #08162C;
-                padding-top: 2.4rem;
-                padding-bottom: 2.4rem;
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
             }
         
             .header-dark-container {
@@ -580,8 +580,8 @@
         
             .header-light {
                 background-color: #ffffff;
-                padding-top: 2.4rem;
-                padding-bottom: 2.4rem;
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
             }
         
             .header-light-container {
