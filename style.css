@@ -1,12 +1,44 @@
+:root {
+    --color-blue: #327cfa;
+    --color-blue-navy: #1E3A8A;
+    --color-blue-cobalt: #2563EB;
+
+}
+
 @font-face {
     font-family: 'inter-regular';
     src: url('/assets/Inter/static/Inter_18pt-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('/assets/Inter/static/Inter_18pt-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url('/assets/Inter/static/Inter_18pt-Bold.ttf');
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.font-inter-regular {
+    font-family: inter-regular;
+    font-weight: normal;
+}
+
+.font-inter-medium {
+    font-family: inter-medium;
+    font-weight: normal;
+}
+
+.font-inter-bold {
+    font-family: inter-bold;
+    font-weight: normal;
 }
 
 body {
@@ -51,6 +83,32 @@ img {
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+h1 {
+    font-family: inter-bold;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: inter-bold;
+    font-weight: normal;
+    font-size: 3.0rem;
+    color: #111111;
+}
+
+h3 {
+    font-family: inter-bold;
+    font-weight: normal;
+    font-size: 2.0rem;
+    color: #111111;
+}
+
+p {
+    font-family: inter-regular;
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: #111111;
 }
 
 .h2_default {
@@ -99,6 +157,13 @@ img {
     background-color: #f8f9fb;
     padding: 32px;
     border-radius: 16px;
+}
+
+.button-square-default-accent {
+    display: inline-block;
+    color: white;
+    background-color: var(--color-blue-cobalt);
+    padding: 0.75rem 1.5rem;
 }
 
 .button-invert {
@@ -158,6 +223,22 @@ img {
     transition: all 0.2s;
 }
 
+
+/* **************************************** */
+/* LAYOUT                                   */
+/* **************************************** */
+
+@media (min-width: 768px) {
+    .flex-d {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-m {
+        display: none;
+    }
+}
 
 /* **************************************** */
 /* HEADER                                   */
@@ -350,8 +431,8 @@ img {
 /* FOOTER                                     */
 /* **************************************** */
 footer h2,
-p,
-a {
+footer p,
+footer a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -418,7 +499,6 @@ footer h2 {
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -775,4 +855,160 @@ footer h2 {
     border: 1px solid #000;
     padding: 6px 8px;
     text-align: left;
+}
+
+
+
+
+
+/* TABS */
+
+.tabs {
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+/* Hide radios */
+.tabs input[type="radio"] {
+    display: none;
+}
+
+/* Tab labels */
+.tab-labels {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-labels label {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #888;
+    border-bottom: 2px solid transparent;
+}
+
+/* Content */
+.tab-content .content {
+    display: none;
+    padding: 20px 0;
+}
+
+/* Block 0 */
+#tabs0-a:checked~.tab-labels label[for="tabs0-a"],
+#tabs0-b:checked~.tab-labels label[for="tabs0-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs0-a:checked~.tab-content .a,
+#tabs0-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 1 */
+#tabs1-a:checked~.tab-labels label[for="tabs1-a"],
+#tabs1-b:checked~.tab-labels label[for="tabs1-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs1-a:checked~.tab-content .a,
+#tabs1-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 2 */
+#tabs2-a:checked~.tab-labels label[for="tabs2-a"],
+#tabs2-b:checked~.tab-labels label[for="tabs2-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs2-a:checked~.tab-content .a,
+#tabs2-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 3 */
+#tabs3-a:checked~.tab-labels label[for="tabs3-a"],
+#tabs3-b:checked~.tab-labels label[for="tabs3-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs3-a:checked~.tab-content .a,
+#tabs3-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 4 */
+#tabs4-a:checked~.tab-labels label[for="tabs4-a"],
+#tabs4-b:checked~.tab-labels label[for="tabs4-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs4-a:checked~.tab-content .a,
+#tabs4-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 5 */
+#tabs5-a:checked~.tab-labels label[for="tabs5-a"],
+#tabs5-b:checked~.tab-labels label[for="tabs5-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs5-a:checked~.tab-content .a,
+#tabs5-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 6 */
+#tabs6-a:checked~.tab-labels label[for="tabs6-a"],
+#tabs6-b:checked~.tab-labels label[for="tabs6-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs6-a:checked~.tab-content .a,
+#tabs6-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 7 */
+#tabs7-a:checked~.tab-labels label[for="tabs7-a"],
+#tabs7-b:checked~.tab-labels label[for="tabs7-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs7-a:checked~.tab-content .a,
+#tabs7-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 8 */
+#tabs8-a:checked~.tab-labels label[for="tabs8-a"],
+#tabs8-b:checked~.tab-labels label[for="tabs8-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs8-a:checked~.tab-content .a,
+#tabs8-b:checked~.tab-content .b {
+    display: block;
+}
+
+/* Block 9 */
+#tabs9-a:checked~.tab-labels label[for="tabs9-a"],
+#tabs9-b:checked~.tab-labels label[for="tabs9-b"] {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+#tabs9-a:checked~.tab-content .a,
+#tabs9-b:checked~.tab-content .b {
+    display: block;
 }

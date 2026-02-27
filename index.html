@@ -1,481 +1,417 @@
 
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="it">
         <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="/style.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="/styles.css">
+            <title>Tecnologie a ozono per aria, acqua e superfici</title>
+            <meta name="description" content="Tecnologie e sistemi a ozono per applicazioni industriali, commerciali e civili. Progettazione, applicazioni e guida tecnica sull'ozono.">
         </head>
         <body>
             
-        <nav class="navbar-light">
-            <div class="logo"><a style="color: #222222;" href="/">Ozonogroup</a></div>
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/index.html">
+                <img src="/immagini/logo.png" alt="Ozonogroup" />
+                </a>
+            </div>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <!-- Hidden checkbox for mobile toggle -->
+            <input type="checkbox" id="nav-toggle" />
 
-            <label for="menu-toggle" class="menu-icon">
+            <!-- Navigation -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-links">
+                <li><a href="/applicazioni.html">Applicazioni</a></li>
+                <li><a href="/prodotti.html">Prodotti</a></li>
+                <li><a href="/servizi.html">Servizi</a></li>
+                <li><a href="/contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger button -->
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
+        </header>
+    
+            <main class="home" id="contenuto-principale">
+                
+            <section class="hero" style="
+                    background: linear-gradient(rgba(0, 30, 60, 0.8), rgba(0, 30, 60, 0.8)), url('/immagini/home/generatore-ozono-industriale-impianto.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    height: 80vh;
+            ">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                    <div class="container-lg">
+                        <h1>
+                            Tecnologia di Ozonizzazione Industriale per Trattamento Acqua, Aria e Superfici
+                        </h1>
+                        <p class="container-md" style="color: #ffffff; font-size: 1.25rem; line-height: 1.4; text-align: center; margin-bottom: 2rem;">
+                            Progettiamo e realizziamo impianti a ozono per applicazioni industriali, alimentari e ambientali con soluzioni su misura e automatizzate.
+                        </p>
+                        <div style="display: flex; justify-content: center;">
+                            <a href="/contatti.html" style="background-color: #0056b3; padding: 12px 16px; color: #ffffff; text-decoration: none;"> 
+                                Richiedi una consulenza gratuita
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-md">
+                    </div>
+                </div>
+            </section>      
+        
+                
+        <section class="applications">
+            <div class="applications-content container-xl">
+                <h2>
+                    Applicazioni industriali dell’ozono
+                </h2>
+                <p style="text-align: center; max-width: 80ch; margin: 0 auto 3rem auto;">
+                    L’ozono viene utilizzato in ambito industriale per disinfettare, ossidare, deodorare e trattare fluidi e ambienti produttivi.
+                </p>
+                <div class="applications-cards grid-3">
+                    <article>
+                        <a href="#" 
+                        title="Trattamento acque industriali con ozono">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-water.jpg" 
+                                    alt="Impianto di trattamento acque industriali con sistema di ozonizzazione"
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 400px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Trattamento acque industriali</h3>
+                        </a>
+                        <p>
+                            Progettiamo impianti di ozonizzazione per ossidare contaminanti, eliminare batteri
+                            e migliorare la qualità delle acque di processo e reflue.
+                        </p>
+                    </article>
+                    <article>
+                        <a href="#" 
+                        title="Sanificazione ambienti e superfici con ozono">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-ambienti.jpg" 
+                                    alt="Sanificazione di ambiente industriale mediante generatore di ozono"
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 400px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Sanificazione ambienti e superfici</h3>
+                        </a>
+                        <p>
+                            Utilizziamo generatori di ozono industriali per eliminare microrganismi,
+                            muffe, virus e biofilm da ambienti produttivi e superfici operative.
+                        </p>
+                    </article>
+                    <article>
+                        <a href="#" title="Abbattimento odori industriali con ozono">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-odori.jpg" 
+                                    alt="Sistema di abbattimento odori industriali con tecnologia a ozono"
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 400px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Abbattimento odori industriali</h3>
+                        </a>
+                        <p>
+                            Implementiamo soluzioni a ozono per decomporre composti organici volatili (VOC)
+                            e neutralizzare odori persistenti in impianti industriali.
+                        </p>
+                    </article>
+                    <article>
+                        <a href="#" title="Soluzioni a ozono per il settore alimentare e agroindustriale">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-alimenti.jpg" 
+                                    alt="Applicazione di ozono nel settore alimentare e agroindustriale"
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 400px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Settore alimentare e agroindustriale</h3>
+                        </a>
+                        <p>
+                            Progettiamo sistemi a ozono per la sicurezza alimentare,
+                            la sanificazione delle linee produttive e il trattamento delle acque di lavaggio.
+                        </p>
+                    </article>
 
-            <ul class="menu">
-                <li><a href="/servizi.html">Servizi</a></li>
-                <li><a href="/prodotti.html">Prodotti</a></li>
-                <li><a href="/settori.html">Settori</a></li>
-                <li><a href="/ozono.html">Guida all'Ozono</a></li>
-                <li><a href="/chi-siamo.html">Chi Siamo</a></li>
-            </ul>
-            
-            <a class="header-button" href="/contatti.html">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M680-80v-120H560v-80h120v-120h80v120h120v80H760v120h-80Zm-480-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z"/></svg>
-                <span>Prenota Consulenza</span>
-            </a>
-        </nav>
+                </div>
+            </div>
+        </section>
     
-            <main>
                 
-        <section style="
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/immagini/sanificazione-ozono.png');
-                background-size: cover;
-                background-position: center;
-                padding-top: 8rem;
-                padding-bottom: 8rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+        <section class="benefits" style="
+            background: linear-gradient(rgba(0, 30, 60, 0.8), rgba(0, 30, 60, 0.8)), 
+            url('/immagini/home-benefici.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         ">
-            <h1 class="container-lg" style="color: #ffffff; font-size: 4rem; line-height: 1; font-weight: normal; text-align: center; margin-bottom: 1rem;">
-                Sanificazione ad Ozono Professionale per l'Industria
-            </h1>
-            <p class="container-md" style="color: #ffffff; font-size: 1.25rem; line-height: 1.4; text-align: center; margin-bottom: 2rem;">
-                Progettiamo e produciamo tecnologie di disinfezione a base di ozono per settori industriali come quello alimentare, agricolo e dei rifiuti.
-            </p>
-            <div>
-                <a class="button-invert" href="/contatti.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M680-80v-120H560v-80h120v-120h80v120h120v80H760v120h-80Zm-480-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z"/></svg>
-                    <span>Prenota Consulenza Gratuita</span>
-                </a>
-            </div>
-        </section>      
-    
-                
-        <section class="container-xl" style="padding-top: 8rem; padding-bottom: 8rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4rem;">
-                <div style="flex: 2;">
-                    <h2 style="color: #222222; font-size: 3rem; line-height: 1; font-weight: normal;">
-                        Servizi di sanificazione industriale con ozono
-                    </h2>
-                </div>
-                <div style="flex: 1; display: flex; justify-content: end;">
-                    <div style="display: inline-block;">
-                        <a class="button-default-1" href="/servizi.html">
-                            <span>Vedi Servizi</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-3" style="column-gap: 3rem; row-gap: 0;">
-                
-            <div>
-                <div style="display: inline-block; margin-bottom: 2rem; border: 1px solid #f2f2f2; border-radius: 2rem; padding: 2rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#327CFA"><path d="M480-120q-117 0-198.5-81.5T200-400q0-100 61.5-176.5T420-674q-26-5-50-14.5T327-717q-28-29-37.5-67t-9.5-78v-18q86-2 148 56.5T489-680q14-43 39.5-80t57.5-69q9-9 21-9t21 9q9 9 9 21t-9 21q-25 25-45 54t-34 61q94 24 152.5 99.5T760-400q0 117-81.5 198.5T480-120Zm0-60q92 0 156-64t64-156q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 92 64 156t156 64Zm0-220Z"/></svg>
-                </div>
-                <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.25; font-weight: bold; margin-bottom: 1rem;">
-                    Sanificazione Prodotti
-                </h3> 
-                <p style="color: #555555; margin-bottom: 2rem;">
-                    Sanifichiamo prodotti, materie prime e imballaggi con ozono per eliminare cariche microbiche e prolungarne la sicurezza e la conservabilità.                    
-                </p>
-                <p>
-                    <a style="color: #555555;" href="/servizi.html">Scopri Servizio</a>
+            <div class="container-xl">
+                <h2 style="color: #ffffff;">
+                    Perché scegliere l’ozono nei processi industriali?
+                </h2>
+                <p style="color: #ffffff; text-align: center; max-width: 80ch; margin: 0 auto 3rem auto;">
+                    L’ozono è un ossidante naturale con elevato potere disinfettante che elimina batteri, virus, muffe e composti organici senza lasciare residui chimici.
                 </p>
             </div>
-        
-            <div>
-                <div style="display: inline-block; margin-bottom: 2rem; border: 1px solid #f2f2f2; border-radius: 2rem; padding: 2rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#327CFA"><path d="M251-160q-88 0-149.5-61.5T40-371q0-78 50-137t127-71q20-97 94-158.5T482-799q112 0 189 81.5T748-522v24q72-2 122 46.5T920-329q0 69-50 119t-119 50H251Zm0-60h500q45 0 77-32t32-77q0-45-32-77t-77-32h-63v-84q0-91-61-154t-149-63q-88 0-149.5 63T267-522h-19q-62 0-105 43.5T100-371q0 63 44 107t107 44Zm229-260Z"/></svg>
-                </div>
-                <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.25; font-weight: bold; margin-bottom: 1rem;">
-                    Sanificazione Aria
-                </h3> 
-                <p style="color: #555555; margin-bottom: 2rem;">
-                    Neutralizziamo virus, batteri e odori negli impianti di ventilazione con ozono, migliorando la qualità dell'aria e la sicurezza dei tuoi ambienti.                    
-                </p>
-                <p>
-                    <a style="color: #555555;" href="/servizi.html">Scopri Servizio</a>
-                </p>
+            <div class="container-xl">
+                <ul class="grid-4" style="list-style: none; gap: 2rem;">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M172-120q-42 0-59.5-39t11.5-71l248-280v-270h-52q-13 0-21.5-8.5T290-810q0-13 8.5-21.5T320-840h320q13 0 21.5 8.5T670-810q0 13-8.5 21.5T640-780h-52v270l248 280q29 32 11.5 71T788-120H172Zm70-90h476L558-395H402L242-210Zm-82 30h640L528-488v-292h-96v292L160-180Zm320-300Z"/></svg>
+                        Riduce l’uso di prodotti chimici nei processi industriali
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M600-90q-12 0-21-9t-9-21v-41q-28-3-53-13t-47-27l-39 39q-9 8-21.5 8.5T388-162q-9-9-9-21.5t9-21.5l40-39q-5-7-9.5-14.5T410-274l-31-62-51 51q-9 8-21.5 8.5T285-285q-9-9-9-21t9-21l51-52-62-31q-7-4-13.5-7.5T248-426l-35 35q-9 8-21.5 8.5T170-391q-9-9-9-21t9-21l34-34q-17-22-28.5-48T161-570h-41q-12 0-21-9t-9-21q0-13 9-21.5t21-8.5h43q5-24 14.5-46t23.5-41l-34-34q-9-9-9-21t9-21q9-9 21-9t21 9l34 34q19-14 41-23.5t46-14.5v-43q0-13 9-21.5t21-8.5q13 0 21.5 8.5T390-840v41q29 3 55 14.5t49 29.5l34-34q9-9 21.5-9t21.5 9q9 9 9 21t-9 21l-36 36 8 12q4 6 7 13l30 60 48-49q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5l-50 49 65 33 16 10 16 10 39-39q9-9 21-9t21 9q9 9 9 21.5t-9 21.5l-39 38q16 21 26 46t13 52h41q13 0 21.5 8.5T870-360q0 12-8.5 21t-21.5 9h-43q-5 24-14 46t-23 41l32 32q9 9 9 21.5t-9 21.5q-9 8-21.5 8.5T749-168l-32-33q-19 14-41 23.5T630-163v43q0 12-8.5 21T600-90Zm-6-130q69 0 112-51.5T738-389q-6-35-26.5-63T659-496l-66-34q-20-11-36-27t-27-36l-34-66q-19-38-53.5-59.5T366-740q-69 0-112 51.5T222-571q6 35 26.5 63t52.5 44l66 33q20 11 36.5 27.5T431-367l33 66q19 38 53.5 59.5T594-220ZM380-540q25 0 42.5-17.5T440-600q0-25-17.5-42.5T380-660q-25 0-42.5 17.5T320-600q0 25 17.5 42.5T380-540Zm235.5 235.5Q630-319 630-340t-14.5-35.5Q601-390 580-390t-35.5 14.5Q530-361 530-340t14.5 35.5Q559-290 580-290t35.5-14.5ZM480-480Z"/></svg>
+                        Elimina microrganismi e biofilm da superfici e attrezzature
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M80-200v-100h610v100H80Zm655 0v-100h50v100h-50Zm95 0v-100h50v100h-50Zm-95-145v-56q0-42-24.5-66T651-491h-71q-54 0-90.5-41.5T453-628q0-54 36.5-90.5T580-755v50q-35 0-56 21t-21 56q0 35 21 61t56 26h71q54 0 94 37t40 91v68h-50Zm95 0v-100q0-75-50-123t-125-48v-50q34 0 55.5-24t21.5-58q0-34-21.5-58T655-830v-50q54 0 90.5 39t36.5 93q0 33-12.5 57T737-650q58 20 100.5 75T880-445v100h-50Z"/></svg>
+                        Decompone odori e composti organici volatili (VOC)
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M213-175q-43.59-45-68.3-104Q120-338 120-400q0-73 25.5-133.5T222-645q35-35 87-59t122.5-37.5Q502-755 591-758.5t198 3.5q8 108 5.5 197.5t-16 160.75q-13.5 71.25-38 124.56Q716-218.87 680-183q-51 51-110 77T444-80q-69 0-126.5-23.5T213-175Zm103 0q25 17 58 26t69.92 9Q497-140 547-162t91-64q27-27 46-70.5t31-103Q727-459 731-534t0-165q-94-2-168.5 2.5T431-680q-57 12-98 30.5T266-604q-42 43-64 91t-22 98q0 48 20.5 100.5T251-230q53-98 127-176t157-123q-87 75-141 162.5T316-175Zm0 0Zm0 0Z"/></svg>
+                        Si riconverte in ossigeno senza generare sottoprodotti tossici
+                    </li>
+                </ul>
             </div>
-        
-            <div>
-                <div style="display: inline-block; margin-bottom: 2rem; border: 1px solid #f2f2f2; border-radius: 2rem; padding: 2rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#327CFA"><path d="M176-120q-19-4-35.5-20.5T120-176l664-664q21 5 36 20.5t21 35.5L176-120Zm-56-252v-112l356-356h112L120-372Zm0-308v-80q0-33 23.5-56.5T200-840h80L120-680Zm560 560 160-160v80q0 33-23.5 56.5T760-120h-80Zm-308 0 468-468v112L484-120H372Z"/></svg>
-                </div>
-                <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.25; font-weight: bold; margin-bottom: 1rem;">
-                    Sanificazione Superfici
-                </h3> 
-                <p style="color: #555555; margin-bottom: 2rem;">
-                    Trattiamo pavimenti, attrezzature e linee produttive con ozono per eliminare residui biologici e ridurre il rischio di contaminazioni.                    
-                </p>
-                <p>
-                    <a style="color: #555555;" href="/servizi.html">Scopri Servizio</a>
-                </p>
-            </div>
-        
-            <div>
         </section>
-        <div style="background-color: #ededed; height: 1px;"></div>  
     
                 
-        <section class="container-xl" style="padding-top: 8rem; padding-bottom: 8rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4rem;">
-                <div style="flex: 2;">
-                    <h2 style="color: #222222; font-size: 3rem; line-height: 1; font-weight: normal;">
-                        I nostri generatori di ozono professionali per la sanificazione industriale                   
-                    </h2>
-                </div>
-                <div style="flex: 1; display: flex; justify-content: end;">
-                    <div style="display: inline-block;">
-                        <a class="button-default-1" href="/prodotti.html">
-                            <span>Vedi Prodotti</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
+        <section class="sectors" style="
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        ">
+            <div class="container-xl">
+                <h2 style="">
+                    Settori industriali in cui operiamo
+                </h2>
+                <p style="text-align: center; max-width: 80ch; margin: 0 auto 3rem auto;">
+                    Progettiamo e realizziamo impianti a ozono per applicazioni industriali specifiche, adattando ogni soluzione ai processi produttivi del settore di riferimento.
+                </p>
+                <div class="sectors-cards grid-3" style="gap: 2rem;">
+                    <article>
+                        <a href="#" title="Impianti a ozono per industria alimentare">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-settori-industria-alimentare.jpg" 
+                                    alt=""
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 240px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Industria alimentare</h3>
                         </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-3" style="column-gap: 3rem; row-gap: 0;">
-                
-            <div>
-                <div style="display: inline-block; margin-bottom: 2rem; border: 1px solid #f2f2f2; border-radius: 2rem; padding: 2rem;">
-                    
-                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#327CFA"><path d="M80-80v-481l280-119v80l200-81v121h320v480H80Zm60-60h680v-359.8H500V-592l-200 80v-79l-160 71v380Zm310-100h60v-160h-60v160Zm-160 0h60v-160h-60v160Zm320 0h60v-160h-60v160Zm270-320H700l40-320h100l40 320ZM140-140h680-680Z"/></svg>
-            
-                </div>
-                <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.25; font-weight: bold; margin-bottom: 1rem;">
-                    Generatori di Ozono Industriali
-                </h3> 
-                <p style="color: #555555; margin-bottom: 2rem;">
-                    Sistemi ad alte portate per impianti produttivi e aree di grandi dimensioni. Integrabili con linee di sanificazione automatizzate.                    
-                </p>
-                <p>
-                    <a style="color: #555555;" href="/prodotti.html">Scopri i modelli industriali</a>
-                </p>
-            </div>
-        
-            <div>
-                <div style="display: inline-block; margin-bottom: 2rem; border: 1px solid #f2f2f2; border-radius: 2rem; padding: 2rem;">
-                    
-                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#327CFA"><path d="M140-180h120v-320h440v320h120v-460L480-776 140-640v460Zm-60 60v-560l400-160 400 160v560H640v-320H320v320H80Zm290 0v-60h60v60h-60Zm80-120v-60h60v60h-60Zm80 120v-60h60v60h-60ZM260-500h440-440Z"/></svg>           
-            
-                </div>
-                <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.25; font-weight: bold; margin-bottom: 1rem;">
-                    Generatori di Ozono Portatili
-                </h3> 
-                <p style="color: #555555; margin-bottom: 2rem;">
-                    Dispositivi compatti per sanificazioni rapide di ambienti, veicoli e camere di stoccaggio. Facili da trasportare, potenti e certificati.                    
-                </p>
-                <p>
-                    <a style="color: #555555;" href="/prodotti.html">Scopri i modelli portatili</a>
-                </p>
-            </div>
-        
-            <div>
-                <div style="display: inline-block; margin-bottom: 2rem; border: 1px solid #f2f2f2; border-radius: 2rem; padding: 2rem;">
-                    
-                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#327CFA"><path d="M320-80q-66 0-113-47t-47-113v-400q0-66 47-113t113-47h50v-80h60v80h100v-80h60v80h50q66 0 113 47t47 113v400q0 66-47 113T640-80H320Zm0-60h320q42 0 71-29t29-71v-400q0-42-29-71t-71-29H320q-42 0-71 29t-29 71v400q0 42 29 71t71 29Zm0-440h320v-60H320v60Zm160 315q33 0 56.5-23.5T560-344q0-26-15-45t-65-76q-50 58-65 76.5T400-344q0 32 23.5 55.5T480-265ZM220-740v600-600Z"/></svg>            
-            
-                </div>
-                <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.25; font-weight: bold; margin-bottom: 1rem;">
-                    Accessori e Sistemi di Controllo
-                </h3> 
-                <p style="color: #555555; margin-bottom: 2rem;">
-                    Centraline di monitoraggio, sensori di concentrazione e sistemi di sicurezza per la gestione dell'ozono in ambiente industriale.                    
-                </p>
-                <p>
-                    <a style="color: #555555;" href="/prodotti.html">Scopri gli accessori</a>
-                </p>
-            </div>
-        
-            <div>
-        </section>
-        <div style="background-color: #ededed; height: 1px;"></div>  
-    
-                
-        <section class="container-xl" style="padding-top: 8rem; padding-bottom: 5rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4rem;">
-                <div style="flex: 2;">
-                    <h2 style="color: #222222; font-size: 3rem; line-height: 1; font-weight: normal;">
-                        Soluzioni su misura per ogni settore
-                    </h2>
-                </div>
-                <div style="flex: 1; display: flex; justify-content: end;">
-                    <div style="display: inline-block;">
-                        <a class="button-default-1" href="/settori.html">
-                            <span>Vedi Settori</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
+                        <p>
+                            Sistemi di ozonizzazione per sanificazione ambienti, trattamento acque di processo e controllo microbiologico nelle linee produttive alimentari.
+                        </p>
+                    </article>
+
+                    <article>
+          <a href="#" title="Ozono per impianti di depurazione">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-settori-acque-reflue.jpg" 
+                                    alt=""
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 240px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Impianti di depurazione</h3>
                         </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-3" style="column-gap: 3rem; row-gap: 3rem;">
-                
-            <div>
-                <img style="margin-bottom: 1rem; border-radius: 1rem; height: 15rem; object-fit: cover;" src="/immagini/settori-industria-alimentare.jpg">
-                
-                <h3 style="color: #222222; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                    Industria alimentare
-                </h3>
-                
-                <p style="color: #555555; margin-bottom: 1rem;">
-                    Sanificazione di linee produttive e celle frigo in conformità HACCP.
-                </p>
-                
-                <p>
-                    <a style="color: #555555;" href="/settori/alimentare.html">Scopri settore</a>
-                </p>
-            </div>
-        
-            <div>
-                <img style="margin-bottom: 1rem; border-radius: 1rem; height: 15rem; object-fit: cover;" src="/immagini/settori-agricolo-agroalimentare.jpg">
-                
-                <h3 style="color: #222222; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                    Agricolo e agroalimentare
-                </h3>
-                
-                <p style="color: #555555; margin-bottom: 1rem;">
-                    Riduzione di batteri, muffe e odori in serre, stalle e impianti di trasformazione.
-                </p>
-                
-                <p>
-                    <a style="color: #555555;" href="/settori/agroalimentare.html">Scopri settore</a>
-                </p>
-            </div>
-        
-            <div>
-                <img style="margin-bottom: 1rem; border-radius: 1rem; height: 15rem; object-fit: cover;" src="/immagini/settori-logistica-magazzini.jpg">
-                
-                <h3 style="color: #222222; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                    Logistica e magazzini
-                </h3>
-                
-                <p style="color: #555555; margin-bottom: 1rem;">
-                    Ambienti di stoccaggio privi di muffe, odori e contaminazioni.
-                </p>
-                
-                <p>
-                    <a style="color: #555555;" href="/settori/logistico.html">Scopri settore</a>
-                </p>
-            </div>
-        
-            <div>
-                <img style="margin-bottom: 1rem; border-radius: 1rem; height: 15rem; object-fit: cover;" src="/immagini/settori-hotel-ristorazione-catering.jpg">
-                
-                <h3 style="color: #222222; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                    Ho.Re.Ca.
-                </h3>
-                
-                <p style="color: #555555; margin-bottom: 1rem;">
-                    Sanificazione di cucine, camere e aree comuni per standard elevati d'igiene.
-                </p>
-                
-                <p>
-                    <a style="color: #555555;" href="/settori/horeca.html">Scopri settore</a>
-                </p>
-            </div>
-        
-            <div>
-                <img style="margin-bottom: 1rem; border-radius: 1rem; height: 15rem; object-fit: cover;" src="/immagini/settori-industria-farmaceutica-cosmetica.jpg">
-                
-                <h3 style="color: #222222; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                    Industria farmaceutica e cosmetica
-                </h3>
-                
-                <p style="color: #555555; margin-bottom: 1rem;">
-                    Ambienti a contaminazione controllata con sistemi automatizzati ad ozono.
-                </p>
-                
-                <p>
-                    <a style="color: #555555;" href="/settori/farmaceutico.html">Scopri settore</a>
-                </p>
-            </div>
-        
-            <div>
-                <img style="margin-bottom: 1rem; border-radius: 1rem; height: 15rem; object-fit: cover;" src="/immagini/settori-impianti-sportivi-palestre.jpg">
-                
-                <h3 style="color: #222222; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                    Impianti sportivi e palestre
-                </h3>
-                
-                <p style="color: #555555; margin-bottom: 1rem;">
-                    Disinfezione sicura e continua di spogliatoi, palestre e aree comuni.
-                </p>
-                
-                <p>
-                    <a style="color: #555555;" href="/settori/sportivo.html">Scopri settore</a>
-                </p>
-            </div>
-        
-            <div>
-        </section>
-        <div style="background-color: #ededed; height: 1px;"></div>  
-    
-                
-        <section class="container-xl" style="padding-top: 8rem; padding-bottom: 8rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4rem;">
-                <div style="flex: 2;">
-                    <h2 style="color: #222222; font-size: 3rem; line-height: 1; font-weight: normal;">
-                        Guida all'Ozono
-                    </h2>
-                </div>
-                <div style="flex: 1; display: flex; justify-content: end;">
-                    <div style="display: inline-block;">
-                        <a class="button-default-1" href="/ozono.html">
-                            <span>Vedi Articoli</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
+                        <p>
+Impianti a ozono per ossidazione avanzata, riduzione COD e abbattimento 
+          odori negli impianti di trattamento acque reflue.                        </p>
+                    </article>
+
+                    <article>
+          <a href="#" title="Ozono per caseifici">
+                            <figure>
+                                <img 
+                                    src="/immagini/home-settori-caseifici.jpg" 
+                                    alt=""
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 240px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Caseifici</h3>
                         </a>
-                    </div>
+                        <p>
+Soluzioni a ozono per sanificazione celle di stagionatura, ambienti produttivi 
+          e trattamento acque nei processi lattiero-caseari.                      </p>
+                    </article>
+
+                    <article>
+<a href="#" title="Ozono per macelli industriali">                            <figure>
+                                <img 
+                                    src="/immagini/home-settori-macelli.jpg" 
+                                    alt=""
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 240px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Macelli</h3>
+                        </a>
+                        <p>
+Sistemi di ozonizzazione per controllo carica batterica, eliminazione odori 
+          e igienizzazione ambienti di lavorazione carni.     
+                        </p>
+                    </article>
+
+                    <article>
+<a href="#" title="Ozono per aziende agricole">                                <img 
+                                    src="/immagini/home-settori-agricoltura.jpg" 
+                                    alt=""
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 240px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Aziende agricole</h3>
+                        </a>
+                        <p>
+Impianti a ozono per trattamento acqua irrigazione, sanificazione serre 
+          e riduzione patogeni nelle coltivazioni.
+                        </p>
+                    </article>
+
+                    <article>
+<a href="#" title="Ozono per impianti chimici">                                <img 
+                                    src="/immagini/home-settori-chimica.jpg" 
+                                    alt=""
+                                    loading="lazy"
+                                    width="600"
+                                    height="400"
+                                    style="height: 240px; object-fit: cover; object-position: center; margin-bottom: 1rem;"
+                                >
+                            </figure>
+                            <h3>Aziende agricole</h3>
+                        </a>
+                        <p>
+Soluzioni di ossidazione con ozono per processi chimici industriali, 
+          abbattimento composti organici volatili e trattamento reflui.                  </p>
+                    </article>
+
+
                 </div>
             </div>
-            <div class="grid-2" style="column-gap: 4rem; row-gap: 0;">
-                <div>
-                    <h3 style="color: #222222; font-size: 3rem; line-height: 1; font-weight: normal; margin-bottom: 2rem;">
-                        Sanificazione a ozono: la soluzione naturale per igiene, sicurezza e benessere
-                    </h3> 
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-                        <span>6 Ottobre 2025</span>
-                        <span>Sanificazione</span>
-                        <div style="display: inline-block;">
-                            <a class="button-default-2" href="/ozono/sanificazione.html">
-                                <span>Leggi Articolo</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                            </a>
-                        </div>
-                    </div>
-                    <img style="border-radius: 1rem; height: 40rem; object-fit: cover;" src="/immagini/ozono-sanificazione.jpg">
-                </div>
-                <div>
-                    
-            <div style="display: flex; gap: 3rem; margin-bottom: 2rem;">
-                <div style="flex: 5;">
-                    <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                        Chimica dell'ozono: reazioni, meccanismi e implicazioni atmosferiche
-                    </h3>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <span>6 Ottobre 2025</span>
-                        <span>Chimica</span>
-                        <div style="display: inline-block;">
-                            <a style="color: #222222; display: flex; gap: 0.5rem; align-items: center;" href="/ozono/chimica.html">
-                                <span>Leggi Articolo</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style="flex: 2;">
-                    <img style="border-radius: 1rem; height: 10rem; object-fit: cover;" src="/immagini/ozono-chimica.jpg">
-                </div>
-            </div>
-        <div style="background-color: #ededed; height: 1px; margin-bottom: 2rem;"></div>
-            <div style="display: flex; gap: 3rem; margin-bottom: 2rem;">
-                <div style="flex: 5;">
-                    <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                        Ozono nell'ambiente: cos'è, dove si trova e quali sono i suoi effetti sull'atmosfera
-                    </h3>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <span>6 Ottobre 2025</span>
-                        <span>Ambiente</span>
-                        <div style="display: inline-block;">
-                            <a style="color: #222222; display: flex; gap: 0.5rem; align-items: center;" href="/ozono/ambiente.html">
-                                <span>Leggi Articolo</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style="flex: 2;">
-                    <img style="border-radius: 1rem; height: 10rem; object-fit: cover;" src="/immagini/ozono-ambiente.jpg">
-                </div>
-            </div>
-        <div style="background-color: #ededed; height: 1px; margin-bottom: 2rem;"></div>
-            <div style="display: flex; gap: 3rem; margin-bottom: 2rem;">
-                <div style="flex: 5;">
-                    <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                        Ozonoterapia: applicazioni, meccanismi e prospettive della terapia con ozono
-                    </h3>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <span>6 Ottobre 2025</span>
-                        <span>Ozonoterapia</span>
-                        <div style="display: inline-block;">
-                            <a style="color: #222222; display: flex; gap: 0.5rem; align-items: center;" href="/ozono/terapia.html">
-                                <span>Leggi Articolo</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style="flex: 2;">
-                    <img style="border-radius: 1rem; height: 10rem; object-fit: cover;" src="/immagini/ozono-terapia.jpg">
-                </div>
-            </div>
-        <div style="background-color: #ededed; height: 1px; margin-bottom: 2rem;"></div>
-            <div style="display: flex; gap: 3rem; margin-bottom: 2rem;">
-                <div style="flex: 5;">
-                    <h3 style="color: #222222; font-size: 1.5rem; line-height: 1.2; font-weight: bold; margin-bottom: 1rem;">
-                        Sanificazione con ozono nei caseifici: guida pratica per caseifici italiani
-                    </h3>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <span>6 Ottobre 2025</span>
-                        <span>Sanificazione</span>
-                        <div style="display: inline-block;">
-                            <a style="color: #222222; display: flex; gap: 0.5rem; align-items: center;" href="/ozono/sanificazione/applicazioni/caseificio.html">
-                                <span>Leggi Articolo</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style="flex: 2;">
-                    <img style="border-radius: 1rem; height: 10rem; object-fit: cover;" src="/immagini/ozono-sanificazione-applicazioni-caseificio.jpg">
-                </div>
-            </div>
-        
-                <div>
-            <div>
         </section>
-        <div style="background-color: #ededed; height: 1px;"></div>  
     
-                <div style="background-color: #ededed; height: 1px;"></div>
-                <section class="container-xl" style="margin-top: 6rem; margin-bottom: 6rem;">
-                    <div style="display: flex; align-items: center; gap: 3rem; margin-bottom: 2rem;">
-                        <h2 style="color: #08162C; font-size: 1.25rem; font-weight: normal;">Contattaci</h2>
-                        <div style="display: flex; align-items: center; gap: 1.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#08162C">
-                                    <path
-                                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
-                                </svg>
-                                <span>Email: info@ozonogroup.it</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#08162C">
-                                    <path
-                                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
-                                </svg>
-                                <span>Telefono: +39 0423 952833</span>
-                            </div>
-                        </div>
+                
+        <section class="benefits" style="
+            background: linear-gradient(rgba(0, 30, 60, 0.8), rgba(0, 30, 60, 0.8)), 
+            url('/immagini/home-dati-tecnici.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        ">
+            <div class="container-xl">
+                <h2 style="color: #ffffff;">
+                    Dati tecnici misurabili dei nostri impianti a ozono industriali
+                </h2>
+                <p style="color: #ffffff; text-align: center; max-width: 80ch; margin: 0 auto 3rem auto;">
+                    I nostri generatori di ozono industriali sono progettati con parametri tecnici verificabili e prestazioni misurabili in contesti produttivi reali.
+                </p>
+            </div>
+            <div class="container-xl">
+                <ul class="benefits grid-3" style="gap: 2rem; list-style: none;">
+                    <li><span>0 - 100 g/h</span>Produzione ozono nominale</li>
+                    <li><span>0,1 ppm</span>Sensori ozono ambientale di sicurezza<strong></strong></li>                    </li>
+                    <li><span>0 - 10 ppm</span>Monitoraggio continuo concentrazione</li>
+                </ul>
+            </div>
+        </section>
+    
+                
+        <section class="faq" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="container-xl"">
+                <h2>
+                    Domande frequenti sugli impianti a ozono industriali
+                </h2>
+                <p style="text-align: center; max-width: 80ch; margin: 0 auto 3rem auto;">
+                    Risposte tecniche e rapide sulle applicazioni industriali dell’ozono.
+                </p>
+            </div>
+            <div class="container-md"">
+                <!-- FAQ 1 -->
+                <div class="card" style="margin-bottom: 2rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">Cos’è un generatore di ozono industriale?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">
+                        Un generatore di ozono industriale è un dispositivo che produce ozono (O₃) a concentrazioni controllate per sanificare ambienti, trattare acque e ossidare contaminanti in ambito produttivo. Funziona tramite scarica a corona o tecnologia UV.
+                    </p>
                     </div>
-                    <div style="">
-                        <div style="display: inline-block;">
-                            <a class="button-default-3" href="/contatti.html">
-                                <span>Prenota Consulenza Gratuita</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>                
-                            </a>
-                        </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="card" style="margin-bottom: 2rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">L’ozono è sicuro negli ambienti di lavoro?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">
+                        L’ozono è sicuro se utilizzato con sistemi di controllo, sensori ambientali e nel rispetto dei limiti di esposizione previsti dalle normative vigenti. Gli impianti industriali prevedono monitoraggio automatico e gestione dei livelli residui.
+                    </p>
                     </div>
-                </section>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="card" style="margin-bottom: 2rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">Qual è la differenza tra ozono e cloro?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">
+                        L’ozono è un ossidante più potente del cloro e non lascia residui chimici, poiché si riconverte in ossigeno. Il cloro, invece, può generare sottoprodotti chimici e richiede gestione dei residui.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">Quanto costa un impianto a ozono?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">
+                        Il costo di un impianto a ozono varia in base a portata, concentrazione richiesta, automazione e settore applicativo. Gli impianti industriali partono da alcune migliaia di euro fino a sistemi su misura di fascia superiore.
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    
             </main>
+            <!-- =======================================
+                 FOOTER
+                 Include company info, legal, sitemap, social links
+            ======================================== -->
             
         <footer class="home-footer-container">
             <div class="container-xl">
