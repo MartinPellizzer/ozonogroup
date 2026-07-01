@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'inter-regular';
-    src: url('/assets/Inter/static/Inter_18pt-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'roboto-regular';
-    src: url('/assets/Roboto/static/Roboto-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap');
 
 :root {
 
@@ -22,12 +14,12 @@
     --color-text-muted: #B0B0B0;
     --color-text-muted: #B0B0B0;
 
-    --color-blue-light: #edf1f6;
+    --color-blue-light: #152942;
     --color-primary-dark-light: #F3F7FB;
 
     /* Typography */
     --font-heading: inter-regular, sans-serif;
-    --font-body: inter-regular, sans-serif;
+    --font-p: manrope-regular, sans-serif;
 
     /* Spacing */
     --space-xs: 4px;
@@ -93,44 +85,85 @@ img {
     height: auto;
 }
 
-h1 {
-    font-family: var(--font-heading);
-    line-height: 1;
-    line-height: 1.1;
+/* *************************************************** */
+/* ELEMENTS */
+/* *************************************************** */
+
+.s {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
-h2 {
-    font-family: var(--font-heading);
+.s-bg {
+    background-color: #f2f4f6;
+}
+
+h1,
+.t-h-lg {
+    color: #111;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
+}
+
+h2,
+.t-h-md {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: #111;
+    font-size: 3em;
+    margin-bottom: 3rem;
     line-height: 1.2;
 }
 
-h3 {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
+h3,
+.t-h-sm {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #111;
+    font-size: 2.5em;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: #222;
+}
+
+
+.sup-h {
+    display: inline-block;
+    color: #111;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 3px;
 }
 
 p {
-    font-family: var(--font-body);
-    line-height: 1.6;
     color: #333;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 li {
-    font-family: var(--font-body);
+    font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
 }
 
 a {
-    font-family: var(--font-body);
+    font-family: 'Manrope', sans-serif;
 }
 
 table {
-    font-family: var(--font-body);
+    font-family: 'Manrope', sans-serif;
     border-collapse: collapse;
     margin-bottom: 1rem;
     width: 100%;
@@ -143,6 +176,9 @@ th {
     padding: 0.5rem 0.75rem;
 }
 
+/* *************************************************** */
+/* LAYOUT */
+/* *************************************************** */
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -161,6 +197,12 @@ th {
 .grid-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-3-0000 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
 }
 
 .rtl {
@@ -1082,9 +1124,42 @@ header .logo img {
         margin-bottom: 1rem;
     }
 
+    .grid-3-0000 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+    .s {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    h1,
+    .t-h-lg {
+        font-size: 2.5rem;
+    }
+
+    h2,
+    .t-h-md {
+        font-size: 2.0rem;
+        margin-bottom: 1rem;
+    }
+
+    h3,
+    .t-h-sm {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .sup-h {
+        font-size: 1.5rem;
+    }
+
     .grid-2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1105,7 +1180,8 @@ header .logo img {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .flex {
+    .m-flex {
+        display: flex;
         flex-direction: column;
     }
 }
